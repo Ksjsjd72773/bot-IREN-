@@ -1,10 +1,10 @@
-Flask 
-requests
+httpx
 protobuf
 protobuf_decoder
-pyjwt
-urllib3
+psutil
 pycryptodome
-httpx
-threading
-
+PyJWT
+PyJWT
+Requests
+urllib3
+telebot
