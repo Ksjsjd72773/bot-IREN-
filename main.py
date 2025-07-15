@@ -37,6 +37,21 @@ import time
 import urllib3
 from important_zitado import*
 from byte import*
+from flask import Flask
+import threading
+
+app = Flask(__name__)
+
+@app.route("/")
+def home():
+    return "Bot is running"
+
+def start_flask():
+    app.run(host="0.0.0.0", port=int(os.environ.get("PORT", 3000)))
+
+# هذا يشغل السيرفر في Thread منفصل
+flask_thread = threading.Thread(target=start_flask)
+flask_thread.start()
 tempid = None
 sent_inv = False
 start_par = False
