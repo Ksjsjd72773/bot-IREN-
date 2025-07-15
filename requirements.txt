@@ -8,3 +8,7 @@ PyJWT
 Requests
 urllib3
 telebot
+flack
+flask
+Flack
+Flask
