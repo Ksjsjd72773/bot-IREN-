@@ -349,7 +349,7 @@ def attack_profail(player_id):
         print("Fuck-Attack")
 
 def send_likes(uid):
-    likes_api_response = requests.get(f"https://likefreefirecommunity-ggblueshark.vercel.app/like?uid={uid}&server_name=vn&key=ayacte")
+    likes_api_response = requests.get(f"https://likes-ch9ayfa.vercel.app/like?uid={uid}&key=ch9ayfa-likes")
     
     if likes_api_response.status_code == 200:
         api_data = likes_api_response.json()
